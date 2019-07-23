@@ -8,7 +8,8 @@ spring:
       host: 10.1.201.197
       port: 8500
       discovery:
-        serviceName: consul
+         instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+         health-check-path: /actuator/health
 management:
   endpoints:
     web:
