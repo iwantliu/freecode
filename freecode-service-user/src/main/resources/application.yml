@@ -1,0 +1,11 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: consul-provider-user
+  cloud:
+    consul:
+      host: 10.1.201.197
+      port: 8500
+      discovery:
+        serviceName: consul
