@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.Map;
 
-@FeignClient(value = "consul-provider-user-8763")
+@FeignClient(value = "consul-provider-user")
 public interface RemoteUserService {
 
     @GetMapping("/user/list")
