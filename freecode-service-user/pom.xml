@@ -32,6 +32,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
+
+        <!--inner-->
+        <dependency>
+            <groupId>com.freecode</groupId>
+            <artifactId>freecode-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 	</dependencies>
 
 	<dependencyManagement>

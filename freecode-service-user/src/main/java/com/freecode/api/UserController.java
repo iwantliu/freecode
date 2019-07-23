@@ -1,5 +1,6 @@
 package com.freecode.api;
 
+import com.freecode.util.NetUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -25,6 +26,7 @@ public class UserController {
         map.put("1001", "user-01");
         map.put("1002", "user-02");
         map.put("1003", "user-03");
+        map.put("host", NetUtil.hostName());
         return map;
     }
 }
