@@ -1,0 +1,17 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: consul-gateway
+  cloud:
+    consul:
+      host: 10.1.201.197
+      port: 8500
+      discovery:
+        instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+        health-check-path: /actuator/health
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
