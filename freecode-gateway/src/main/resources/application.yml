@@ -8,6 +8,13 @@ spring:
       disconvery:
         locator:
           enabled: true
+      globalcors: #øÁ”Ú
+          corsConfigurations:
+            '[/**]':
+              allowedOrigins: "*"
+              allowedMethods:
+               - GET
+               - POST
     consul:
       host: 10.1.201.197
       port: 8500
