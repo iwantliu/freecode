@@ -9,14 +9,14 @@
     <!-- 控制台打印 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder charset="utf-8">
-            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n
+            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger - %m%n
             </pattern>
         </encoder>
     </appender>
     <!-- ERROR 输入到文件，按日期和文件大小 -->
     <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder charset="utf-8">
-            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n
+            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger - %m%n
             </pattern>
         </encoder>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
@@ -37,7 +37,7 @@
     <!-- WARN 输入到文件，按日期和文件大小 -->
     <appender name="WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder charset="utf-8">
-            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n
+            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger - %m%n
             </pattern>
         </encoder>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
@@ -57,7 +57,7 @@
     <!-- INFO 输入到文件，按日期和文件大小 -->
     <appender name="INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder charset="utf-8">
-            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n
+            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger - %m%n
             </pattern>
         </encoder>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
@@ -76,7 +76,7 @@
     <!-- DEBUG 输入到文件，按日期和文件大小 -->
     <appender name="DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder charset="utf-8">
-            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n
+            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger - %m%n
             </pattern>
         </encoder>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
@@ -96,7 +96,7 @@
     <!-- TRACE 输入到文件，按日期和文件大小 -->
     <appender name="TRACE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <encoder charset="utf-8">
-            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger{36} - %m%n
+            <pattern>[%-5level] %d{${DATETIME}} [%thread] %logger-%m%n
             </pattern>
         </encoder>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
@@ -116,7 +116,7 @@
     </appender>
 
     <logger name="org" level="DEBUG" additivity="false" />
-
+    <logger name="com" level="DEBUG" additivity="false" />
     <!-- Logger 根目录 -->
     <root level="DEBUG">
         <appender-ref ref="STDOUT" />
