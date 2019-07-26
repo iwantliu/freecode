@@ -2,7 +2,7 @@ server:
   port: 8764
 spring:
   application:
-    name: consul-consumer-web
+    name: consul-web-api
   cloud:
     consul:
       host: 10.1.201.197

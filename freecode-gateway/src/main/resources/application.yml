@@ -8,7 +8,7 @@ spring:
       disconvery:
         locator:
           enabled: true
-      globalcors: #øÁ”Ú
+      globalcors:
           corsConfigurations:
             '[/**]':
               allowedOrigins: "*"
