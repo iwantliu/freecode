@@ -17,11 +17,14 @@ public class FreecodeGatewayApplication {
         SpringApplication.run(FreecodeGatewayApplication.class, args);
     }
 
-//    @Bean
-//    public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
-//        return builder.routes()
-//                .route("path_route", r -> r.path("/actuator/health")
-//                        .uri("/actuator/health"))
-//                .build();
-//    }
+    @Bean
+    public RouteLocator routes(RouteLocatorBuilder builder) {
+        return builder.routes()
+                .route(p -> p
+                        .path("/user/**")
+                        .filters(f -> f.addRequestParameter("param", "ak"))
+                        .uri("lb://consul-consumer-web/"))
+                .build();
+
+    }
 }
