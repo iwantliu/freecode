@@ -16,13 +16,13 @@ spring:
               allowedMethods:
                - GET
                - POST
-#    consul:
-#      host: 10.1.201.197
-#      port: 8500
-#      discovery:
-#        prefer-ip-address: true
-#        instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
-#        health-check-path: /actuator/health
+    consul:
+      host: 10.1.201.197
+      port: 8500
+      discovery:
+        prefer-ip-address: true
+        instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
+        health-check-path: /actuator/health
 management:
   endpoints:
     web:
