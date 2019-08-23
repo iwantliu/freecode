@@ -115,8 +115,7 @@
         </rollingPolicy>
     </appender>
 
-    <logger name="org" level="DEBUG" additivity="false" />
-    <logger name="com" level="DEBUG" additivity="false" />
+    <logger name="*" level="DEBUG" additivity="false" />
     <!-- Logger 根目录 -->
     <root level="DEBUG">
         <appender-ref ref="STDOUT" />
