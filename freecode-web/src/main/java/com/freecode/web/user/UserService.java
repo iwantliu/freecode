@@ -1,4 +1,4 @@
-package com.freecode.service.user;
+package com.freecode.web.user;
 
 import java.util.Map;
 
