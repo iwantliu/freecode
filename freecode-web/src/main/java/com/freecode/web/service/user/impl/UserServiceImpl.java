@@ -1,7 +1,7 @@
-package com.freecode.web.user.impl;
+package com.freecode.web.service.user.impl;
 
-import com.freecode.web.user.UserService;
-import com.freecode.web.user.remote.RemoteUserService;
+import com.freecode.web.service.user.UserService;
+import com.freecode.web.service.user.remote.RemoteUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

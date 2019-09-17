@@ -1,4 +1,4 @@
-package com.freecode.web.user.remote;
+package com.freecode.web.service.user.remote;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
