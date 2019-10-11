@@ -1,5 +1,8 @@
 package com.freecode.api;
 
+import com.freecode.api.order.A;
+import com.freecode.api.order.T;
+
 import java.text.DecimalFormat;
 
 /**
@@ -13,5 +16,11 @@ public class Main {
     public static void main(String[] args) {
         DecimalFormat d = new DecimalFormat("#####.##");
         System.out.println(d.format(2.0d));
+
+        A a = new A();
+        T t = new T();
+        t.setO(a);
+
+        System.out.println(t.getO() instanceof A);
     }
 }
