@@ -1,6 +1,7 @@
 package com.freecode.api;
 
 import com.freecode.api.order.A;
+import com.freecode.api.order.B;
 import com.freecode.api.order.T;
 
 import java.text.DecimalFormat;
@@ -20,7 +21,13 @@ public class Main {
         A a = new A();
         T t = new T();
         t.setO(a);
-
         System.out.println(t.getO() instanceof A);
+
+        B b = new B();
+        T t2 = new T();
+        t2.setO(b);
+        System.out.println(t2.getO() instanceof A);
+        System.out.println(t2.getO() instanceof B);
+
     }
 }
