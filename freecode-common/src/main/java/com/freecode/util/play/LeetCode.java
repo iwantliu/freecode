@@ -9,6 +9,11 @@ package com.freecode.util.play;
  */
 public class LeetCode {
     public static void main(String[] args) {
+//        recursion();//StackOverflowError
+    }
 
+    private static void recursion(){
+        recursion();
+        long a= 123412431237214L;
     }
 }
