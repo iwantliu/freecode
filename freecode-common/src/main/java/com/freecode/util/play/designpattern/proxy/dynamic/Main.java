@@ -34,7 +34,7 @@ public class Main {
         Class<? extends Subject> realClass = s.getClass();
         Subject proxyInstance = (Subject) Proxy.newProxyInstance(realClass.getClassLoader(), realClass.getInterfaces(), proxy);
         proxyInstance.invoke("im dynamic proxy java");
-        System.out.println("==============================>>>>>>>");
+        System.out.println("====================>>>>>>>>>>>>>");
         ProxySubjectCglib proxyCglib = new ProxySubjectCglib();
         Subject o = (Subject) proxyCglib.createProxyObj(realClass);
         o.invoke("im dynamic proxy cglib");
