@@ -15,6 +15,7 @@ public class A {
 
     /**
      * 三个线程交替输出ABC
+     *
      * @param args
      */
     public static void main(String[] args) {
