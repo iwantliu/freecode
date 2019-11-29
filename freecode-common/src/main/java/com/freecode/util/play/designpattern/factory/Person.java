@@ -1,4 +1,4 @@
-package com.freecode.util.play.designpattern.factory.simplef;
+package com.freecode.util.play.designpattern.factory;
 
 /**
  * <p>Description:</p>
